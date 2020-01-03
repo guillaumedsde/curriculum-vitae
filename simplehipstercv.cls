@@ -284,7 +284,7 @@
 % Farben
 \definecolor{headerblue}{HTML}{b3b3b3}%
 \definecolor{cvorange}{HTML}{b3b3b3}
-\definecolor{cvpurple}{HTML}{b3b3b3}
+\definecolor{cvpurple}{HTML}{dba55b}
 
 \definecolor{cvred}{HTML}{b3b3b3}
 \definecolor{cvgreen}{HTML}{00b3b3}
