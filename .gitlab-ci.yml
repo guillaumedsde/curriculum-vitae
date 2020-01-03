@@ -17,6 +17,9 @@ build-image:
     name: debian:stable-slim
     entrypoint: [""]
   stage: image
+  before_script:
+    - apt update
+    - apt install -y --no-install-recommends imagemagick
   script:
     - convert main.pdf main.png
   artifacts:
