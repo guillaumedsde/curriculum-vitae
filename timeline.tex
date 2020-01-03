@@ -68,7 +68,7 @@
 
 						\draw[draw=##6, line width=1.5pt] (0, \startexp) -- (1,\startexp);
 
-						\node[label={[align=left, label distance=2.5]0:\colorbox{##6}{\strut}\colorbox{white}{\textcolor{gray}{##7}\hspace{3pt}\textcolor{textcol}{##3}}\hspace{3pt}\textcolor{gray}{##4} \ifthenelse{\equal{##5}{}}{}{\\ \colorbox{##6}{\strut}\colorbox{white}{\textcolor{gray}{##5}}}}] at (0.5, \startexp) {};
+						\node[label={[align=left, label distance=2.5]0:\colorbox{##6}{\strut}\colorbox{white}{\textcolor{gray}{##7}\hspace{3pt}\textcolor{##6}{##3}}\hspace{3pt}\textcolor{gray}{##4} \ifthenelse{\equal{##5}{}}{}{\\ \colorbox{##6}{\strut}\colorbox{white}{\textcolor{gray}{##5}}}}] at (0.5, \startexp) {};
 
 						
 					}
@@ -87,22 +87,22 @@
 		%calc fullrange= number of years
 		\pgfmathparse{(#2-#1)}
 		\let\fullrange\pgfmathresult
-		\draw[draw=textcol,line width=4pt] (0,0) -- (0,#3) ;	%the timeline
+		\draw[draw=skilllabelcolour,line width=4pt] (0,0) -- (0,#3) ;	%the timeline
 
 		%for each year put a horizontal line in place
 		\setcounter{yearcount}{1}
 		\whiledo{\value{yearcount} < \fullrange}{
-			\draw[fill=white,draw=textcol, line width=2pt]  (0,#3/\fullrange*\value{yearcount}) circle (0.1);
+			\draw[fill=white,draw=skilllabelcolour, line width=2pt]  (0,#3/\fullrange*\value{yearcount}) circle (0.1);
 			\stepcounter{yearcount}
 		}
 
 		%start year
-		\filldraw[fill=white!100,draw=textcol,line width=3pt] (0,-0.5) circle (0.5);
-		\node[label=\textcolor{textcol}{\textbf{\small#1}}] at (0,-0.85) {};
+		\filldraw[fill=white!100,draw=skilllabelcolour,line width=3pt] (0,-0.5) circle (0.5);
+		\node[label=\textcolor{skilllabelcolour}{\textbf{\small#1}}] at (0,-0.85) {};
 
 		%end year
-		\filldraw[fill=white!100,draw=textcol,line width=5pt] (0,#3+0.75) circle (0.75);
-		\node[label=\textcolor{textcol}{\textbf{\large#2}}] at (0,#3+0.42) {};
+		\filldraw[fill=white!100,draw=skilllabelcolour,line width=5pt] (0,#3+0.75) circle (0.75);
+		\node[label=\textcolor{skilllabelcolour}{\textbf{\large#2}}] at (0,#3+0.42) {};
 
 
 

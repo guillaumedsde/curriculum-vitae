@@ -11,6 +11,7 @@
 \usepackage[margin=1cm, a4paper]{geometry}
 
 \usepackage{hyperref}
+\usepackage{tabularx}
 
 %------------------------------------------------------------------ Variables
 
@@ -106,44 +107,53 @@
   \lorem\lorem\lorem}
   \bigskip
 
-  \bg{cvgreen}{white}{personal} \\[0.5em]
-  Jack Sparrow
-
-  nationality: English
-
-  1690
-
-  \bigskip
-
   \bg{cvgreen}{white}{Skills} \\[0.5em]
 
-  Python ~•~ Flask ~•~ Django ~•~ OpenAPI ~•~ Machine Learning (Sklearn) ~•~ Docker ~•~ CI/CD (Gitlab, Jenkins, Dockerhub) ~•~ Linux (Arch, Ubuntu) ~•~ PfSense ~•~ LaTeX  ~•~ MongoDB ~•~ ReactJS
+  Python ~•~
+  Flask ~•~
+  Django ~•~
+  OpenAPI ~•~
+  Machine Learning (Sklearn) ~•~
+  Docker ~•~
+  CI/CD (Gitlab, Jenkins, Dockerhub) ~•~
+  Linux (Arch, Ubuntu) ~•~
+  PfSense ~•~
+  LaTeX  ~•~
+  MongoDB ~•~
+  ReactJS
 
   \bigskip
 
+  \bg{cvgreen}{white}{Interests} \\[0.5em]
 
+  Chinese Politics ~•~
+  Energy Politics ~•~
+  European Politics ~•~
+  Geopolitics ~•~
+  Agrifood Industry
 
   \bigskip
+
   \bg{cvgreen}{white}{Programming} \\[0.5em]
 
-  \begin{tabular}{ll}
+  \begin{tabularx}{\leftcolwidth}{ll}
     \bg{skilllabelcolour}{iconcolour}{python}     & \barrule{0.35\leftcolwidth}{0.5em}{cvpurple} \\
-    \bg{skilllabelcolour}{iconcolour}{html, css}  & \barrule{0.2\leftcolwidth}{0.5em}{cvpurple}  \\
+    \bg{skilllabelcolour}{iconcolour}{HTML, CSS}  & \barrule{0.2\leftcolwidth}{0.5em}{cvpurple}  \\
     \bg{skilllabelcolour}{iconcolour}{\LaTeX}     & \barrule{0.3\leftcolwidth}{0.5em}{cvpurple}  \\
     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.2\leftcolwidth}{0.5em}{cvpurple}  \\
     \bg{skilllabelcolour}{iconcolour}{C}          & \barrule{0.1\leftcolwidth}{0.5em}{cvpurple}  \\
     \bg{skilllabelcolour}{iconcolour}{C++}        & \barrule{0.05\leftcolwidth}{0.5em}{cvpurple} \\
     \bg{skilllabelcolour}{iconcolour}{Java}       & \barrule{0.05\leftcolwidth}{0.5em}{cvpurple} \\
-  \end{tabular}
+  \end{tabularx}
 
   \bigskip
 
   \bg{cvgreen}{white}{Languages} \\[0.5em]
-  \begin{tabular}{l | l}
+  \begin{tabularx}{\leftcolwidth}{l | X}
     \textbf{French}  & {\phantom{x}\footnotesize Native language}                \\
     \textbf{English} & {\phantom{x}\footnotesize bilingual}                      \\
     \textbf{Spanish} & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny}
-  \end{tabular}
+  \end{tabularx}
 
   \bigskip
 
@@ -157,13 +167,13 @@
   \bigskip
 
   \bg{cvgreen}{white}{Sports}\\[0.5em]
+  \begin{tabularx}{\leftcolwidth}{l | X}
+  \textbf{Swimming} & 10 Years \\
 
-  \texttt{Swimming - 10 Years}
+  \textbf{Biking} & 6 Years \\
 
-  \texttt{Biking - 6 Years}
-
-  \texttt{Running - 4 Years}
-
+  \textbf{Running} & 4 Years \\
+  \end{tabularx}
   \vspace{4em}
 
 
@@ -203,18 +213,18 @@
   \section*{Projects}
   \begin{minipage}[t]{0.45\rightcolwidth}
     \subsubsection*{Sensitive Document Classification}
-    My final year project is a ReactJS + Flask Web Application for redacting sensitive documents with SkLearn Machine Learning classification of MongoDB documents by sensitivity.
+    My final year project is a \textbf{ReactJS} + \textbf{Flask} Web Application for redacting sensitive documents with \textbf{SkLearn} Machine Learning classification of \textbf{MongoDB} documents by sensitivity.
   \end{minipage}
   \hspace{0.5em}
   \begin{minipage}[t]{0.45\rightcolwidth}
     \subsubsection*{Personal docker compose stack}
-    Minimal configuration automatic SSL Traefik reverse proxy serving various applications protected by an OAuth2 proxy.
+    Minimal configuration automatic SSL \textbf{Traefik} reverse proxy serving various applications protected by an \textbf{OAuth2} proxy.
   \end{minipage}
-  
+
   \begin{minipage}[t]{0.45\rightcolwidth}
     \vspace{1em}
     \subsubsection*{Web crawler}
-    Broad web crawler built with Scrapy as multiple Python microservices backed by MongoDB for extracting website metadata.
+    Broad web crawler built with \textbf{Scrapy} as multiple Python microservices backed by \textbf{MongoDB} for extracting website metadata.
   \end{minipage}
 
 
