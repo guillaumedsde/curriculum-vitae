@@ -2,34 +2,32 @@
 % https://www.latextemplates.com/template/twenty-seconds-resumecv
 % https://www.latextemplates.com/template/friggeri-resume-cv
 
-\documentclass[lighthipster]{simplehipstercv}
+\documentclass[withoutsidebar]{simplehipstercv}
 % available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
 % withoutsidebar
 
-
-\usepackage{ifxetex}
-
-\ifxetex
-  \usepackage{fontspec}
-  \usepackage{fontawesome}
-\else
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
-  \usepackage{babel}
-  \usepackage{lmodern}
-\fi
-
+\usepackage[utf8]{inputenc}
 \usepackage[default]{raleway}
 \usepackage[margin=1cm, a4paper]{geometry}
+
+%------------------------------------------------------------------ Variables
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.25\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{Curriculum vitae}
+\author{Guillaume de Susanne d'Epinay}
+\date{\today}
+
+\pagestyle{empty}
+
 
 %----------------------------------------------------------------------------------------
 % 	TIMELINE CHART
 %----------------------------------------------------------------------------------------
-\input{timeline.tex}
-
-%----------------------------------------------------------------------------------------
-%	Color DEFINITIONS
-%---------------------------------------------------------------------------------------- 
 
 \usepackage{xcolor}
 
@@ -53,6 +51,9 @@
 \colorlet{fifthcol}{lgray}
 \colorlet{sixthcol}{darkblue}
 
+%background color
+\colorlet{bgcol}{powderblue}
+
 %textcolor
 \colorlet{textcol}{darkestblue}
 
@@ -62,19 +63,8 @@
 %sectioncolor
 \colorlet{sectcol}{white}
 
-%------------------------------------------------------------------ Variablen
+\input{timeline.tex}
 
-\newlength{\rightcolwidth}
-\newlength{\leftcolwidth}
-\setlength{\leftcolwidth}{0.23\textwidth}
-\setlength{\rightcolwidth}{0.75\textwidth}
-
-%------------------------------------------------------------------
-\title{Curriculum vitae}
-\author{Guillaume de Susanne d'Epinay}
-\date{\today}
-
-\pagestyle{empty}
 \begin{document}
 
 
@@ -83,7 +73,7 @@
 
 \section*{Start}
 
-\simpleheader{headercolour}{Jack}{Sparrow}{Captain}{white}
+\simpleheader{headercolour}{Guillaume}{de Susanne d'Epinay}{University \textit{of} Glasgow Student}{white}
 
 
 
@@ -94,102 +84,141 @@
 \vspace{4em}
 
 \setlength{\columnsep}{1.5cm}
-\columnratio{0.23}[0.75]
+\columnratio{0.25}[0.75]
 \begin{paracol}{2}
-    \hbadness5000
-    %\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+  \hbadness5000
+  % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
 
-    \paracolbackgroundoptions
+  \paracolbackgroundoptions
 
-    % 0.9,0.9,0.9 -- 0.8,0.8,0.8
-
-
-    \footnotesize
-    {\setasidefontcolour
-    \flushright
-
-    \bg{cvgreen}{white}{About me}\\[0.5em]
-
-    {\footnotesize
-    \lorem\lorem\lorem}
-    \bigskip
-
-    \bg{cvgreen}{white}{personal} \\[0.5em]
-    Jack Sparrow
-
-    nationality: English
-
-    1690
-
-    \bigskip
-
-    \bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
-
-    Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
-
-    \bigskip
+  % 0.9,0.9,0.9 -- 0.8,0.8,0.8
 
 
+  \footnotesize
+  {\setasidefontcolour
+  \flushright
 
-    \bigskip
+  \bg{cvgreen}{white}{About me}\\[0.5em]
 
-    \bg{cvgreen}{white}{Interests}\\[0.5em]
+  {\footnotesize
+  \lorem\lorem\lorem}
+  \bigskip
 
-    \lorem
-    \bigskip
+  \bg{cvgreen}{white}{personal} \\[0.5em]
+  Jack Sparrow
 
-    \bg{cvgreen}{white}{Interests}\\[0.5em]
+  nationality: English
 
-    \texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+  1690
 
-    \texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+  \bigskip
 
-    \texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+  \bg{cvgreen}{white}{Skills} \\[0.5em]
 
-    \vspace{4em}
+  Python ~•~ Flask ~•~ Django ~•~ OpenAPI ~•~ Machine Learning (Sklearn) ~•~ Docker ~•~ CI/CD (Gitlab, Jenkins, Dockerhub) ~•~ Linux (Arch, Ubuntu) ~•~ PfSense ~•~ LaTeX  ~•~ MongoDB ~•~ ReactJS
 
-    \infobubble{\faAt}{cvgreen}{white}{jack@sparrow.org}
-    \infobubble{\faTwitter}{cvgreen}{white}{@sparrow}
-    \infobubble{\faFacebook}{cvgreen}{white}{Jack Sparrow}
-    \infobubble{\faGithub}{cvgreen}{white}{sparrow}
-
-    \phantom{turn the page}
-
-    \phantom{turn the page}
-    }
-    %-----------------------------------------------------------
-    \switchcolumn
-    % TIMELINE
-    \begin{cvtimeline}{2009}{2020}{20.9}{\linewidth}
-        \linevent{6/2019}{8/2019}{Internship}{Misakey}{Website metada Scrapy crawler as Docker microservices backed by MongoDB}{secondcol}{0}
-
-        \linevent{6/2018}{7/2018}{Summer job}{CGI Clermont-Ferrand}{Python program to formulate Gitlab access levels in Terraform definitions of Azure IAM policies}{secondcol}{0}
-
-        \linevent{9/2016}{7/2020}{Master of Arts in Computing Science and Politics}{University \textit{of} Glasgow}{Undergraduate student}{maincol}{0}
-
-        \linevent{8/2016}{9/2016}{Lifeguard}{Aydat, France}{Python program to formulate Gitlab access levels in Terraform definitions of Azure IAM policies}{secondcol}{0}
-
-        \linevent{9/2013}{7/2016}{French Scientific Baccalauréat, British OIB}{Lycée Jeanne d'Arc, Clermont-Ferrand}{French scientific high school diploma with international english with first class honours }{maincol}{0}
-
-    \end{cvtimeline}
-
-
-    
+  \bigskip
 
 
 
-    \vfill{} % Whitespace before final footer
+  \bigskip
+  \bg{cvgreen}{white}{Programming} \\[0.5em]
 
-    %----------------------------------------------------------------------------------------
-    %	FINAL FOOTER
-    %----------------------------------------------------------------------------------------
-    \setlength{\parindent}{0pt}
-    \begin{minipage}[t]{\rightcolwidth}
-        \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
-            {\small Jack Sparrow \icon{\faEnvelopeO}{cvgreen}{} The Black Pearl \icon{\faMapMarker}{cvgreen}{} Tortuga \icon{\faPhone}{cvgreen}{} 0099/333 5647380 \newline\icon{\faAt}{cvgreen}{} \protect\url{jack@sparrow.com}
-            }
-        \end{center}
-    \end{minipage}
+  \begin{tabular}{ll}
+    \bg{skilllabelcolour}{iconcolour}{python}     & \barrule{0.35\leftcolwidth}{0.5em}{cvpurple} \\
+    \bg{skilllabelcolour}{iconcolour}{html, css}  & \barrule{0.2\leftcolwidth}{0.5em}{cvpurple}  \\
+    \bg{skilllabelcolour}{iconcolour}{\LaTeX}     & \barrule{0.3\leftcolwidth}{0.5em}{cvpurple}  \\
+    \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.2\leftcolwidth}{0.5em}{cvpurple}  \\
+    \bg{skilllabelcolour}{iconcolour}{C}          & \barrule{0.1\leftcolwidth}{0.5em}{cvpurple}  \\
+    \bg{skilllabelcolour}{iconcolour}{C++}        & \barrule{0.05\leftcolwidth}{0.5em}{cvpurple} \\
+    \bg{skilllabelcolour}{iconcolour}{Java}       & \barrule{0.05\leftcolwidth}{0.5em}{cvpurple} \\
+  \end{tabular}
+
+  \bigskip
+
+  \bg{cvgreen}{white}{Languages} \\[0.5em]
+  \begin{tabular}{l | l}
+    \textbf{French}  & {\phantom{x}\footnotesize mother tongue}                  \\
+    \textbf{French}  & {\phantom{x}\footnotesize bilingual}                      \\
+    \textbf{Spanish} & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny}
+  \end{tabular}
+
+  \bigskip
+
+  \bg{cvgreen}{white}{Interests}\\[0.5em]
+
+  \texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+
+  \texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+
+  \texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+
+  \vspace{4em}
+
+
+  \href{https://guillaume.desusanne.com}{\infobubble{\faUser}{cvgreen}{white}{guillaume.desusanne.com}}
+  \href{https://blog.guillaume.desusanne.com}{\infobubble{\faPencil}{cvgreen}{white}{blog.guillaume.desusanne.com}}
+  \href{https://github.com/guillaumedsde}{\infobubble{\faGithub}{cvgreen}{white}{guillaumedsde}}
+  \href{https://gitlab.com/guillaumedsde}{\infobubble{\faGitlab}{cvgreen}{white}{guillaumedsde}}
+
+
+  \phantom{turn the page}
+
+  \phantom{turn the page}
+  }
+  %-----------------------------------------------------------
+  \switchcolumn
+
+
+
+  % TIMELINE
+  \begin{cvtimeline}{2013}{2021}{11}
+    \linevent{6/2019}{8/2019}{Intern}{Misakey, Lyon}{Website metada Scrapy crawler as Docker microservices backed by MongoDB}{cvgreen}{8/2019}
+
+    \linevent{6/2018}{7/2018}{Summer job}{CGI, Clermont-Ferrand}{Python program to formulate Gitlab access levels in Terraform Azure IAM policies}{cvgreen}{7/2018}
+
+    \linevent{6/2017}{8/2017}{Lifeguard}{Cournon d'Auvergne, France}{Team supervision of the safety and rescue of swimmers in lake of Cournon d'Auvergne}{cvgreen}{8/2017}
+
+    \linevent{9/2016}{7/2020}{Master of Arts in Computing Science and Politics}{University \textit{of} Glasgow}{Undergraduate student}{cvpurple}{7/2020}
+
+    \linevent{8/2016}{10/2016}{Lifeguard}{Aydat, France}{}{cvgreen}{8/2016}
+
+    \linevent{9/2013}{2/2016}{Scientific Baccalauréat, British OIB}{Lycée Jeanne d'Arc, Clermont-Ferrand}{First class honours French scientific high school diploma with international english}{cvpurple}{7/2016}
+
+    \linevent{9/2010}{7/2013}{Brevet mention internationale}{Collège Jeanne d'Arc, Clermont-Ferrand}{Second Class honours French middle school diploma with international english}{cvgreen}{7/2016}
+
+  \end{cvtimeline}
+
+  \section*{Projects}
+  \subsubsection*{Sensitive Document Classification}
+  My final year project is a ReactJS + Flask Web Application for redacting sensitive documents with SkLearn Machine Learning classification of MongoDB documents by sensitivity.
+
+  \subsubsection*{Personal docker-compose stack}
+  Minimal configuration automatic SSL Traefik reverse proxy serving various applications protected by an OAuth2 proxy.
+
+  \subsubsection*{Web crawler}
+  Broad web crawler built with Scrapy as multiple Python microservices backed by MongoDB for extracting website metadata.
+
+
+  \vfill{} % Whitespace before final footer
+
+  %----------------------------------------------------------------------------------------
+  %	FINAL FOOTER
+  %----------------------------------------------------------------------------------------
+  \setlength{\parindent}{0pt}
+  \begin{minipage}[t]{0.9\rightcolwidth}
+    \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+      {
+        \small Guillaume de Susanne d'Epinay
+
+        \href{geo:45.6214539,3.0495612}{\icon{\faEnvelopeO}{cvgreen}{} Chemin de la roche du Grelet, 63450 Olloix}
+        \icon{\faMapMarker}{cvgreen}{} France
+
+        \href{tel:+33 6 41 80 00 60}{\icon{\faPhone}{cvgreen}{} +33 6 41 80 00 60}
+        \href{mailto:guillaume@desusanne.com}{\icon{\faAt}{cvgreen}{} \protect\url{guillaume@desusanne.com}}
+      }
+    \end{center}
+  \end{minipage}
 
 \end{paracol}
 

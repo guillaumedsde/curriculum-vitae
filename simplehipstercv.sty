@@ -172,7 +172,7 @@
 
 %---------------------------------------------------------
 \newcommand{\barrule}[3]{\hspace{0.5em}
-{\color{#3}\rule[\baselineskip]{#1\textwidth}{#2}}\vspace{0.5em}
+{\color{#3}\rule[\baselineskip]{#1}{#2}}\vspace{0.5em}
 }
 
 \newcommand{\cvevent}[6]{{#1} & \textbf{#2}\newline\textsc{#3} $\cdot$ {#4 ~\faMapMarker}\newline{\color{black!70}\footnotesize #5}\vspace{1.5em} & \raisebox{-0.7\height}{\includegraphics[height=1cm]{#6}}}
@@ -200,7 +200,7 @@
 
 
 \newcommand{\infobubble}[4]{
-\scalebox{1.3}{
+\scalebox{1}{
 \begin{tikzpicture}
 \draw[draw=#2,fill=#2] (0,0) circle (0.2cm);
 \node[] at (0,0) {\color{#3}\textbf{#1}};
