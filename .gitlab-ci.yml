@@ -1,10 +1,11 @@
 stages:
-  - build
+  - pdf
+  - image
   - deploy
 
 build-latex:
   image: aergus/latex:latest
-  stage: build
+  stage: pdf
   script:
     - latexmk -pdf -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape ./main.tex
   artifacts:
@@ -15,7 +16,7 @@ build-image:
   image:
     name: debian:stable-slim
     entrypoint: [""]
-  stage: build
+  stage: image
   script:
     - convert main.pdf main.png
   artifacts:
