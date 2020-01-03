@@ -19,7 +19,7 @@ build-image:
   stage: image
   before_script:
     - apt update
-    - apt install -y --no-install-recommends imagemagick
+    - apt install -y imagemagick
   script:
     - convert main.pdf main.png
   artifacts:
