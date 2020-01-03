@@ -140,8 +140,8 @@
 
   \bg{cvgreen}{white}{Languages} \\[0.5em]
   \begin{tabular}{l | l}
-    \textbf{French}  & {\phantom{x}\footnotesize mother tongue}                  \\
-    \textbf{French}  & {\phantom{x}\footnotesize bilingual}                      \\
+    \textbf{French}  & {\phantom{x}\footnotesize Native language}                \\
+    \textbf{English} & {\phantom{x}\footnotesize bilingual}                      \\
     \textbf{Spanish} & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny}
   \end{tabular}
 
@@ -149,10 +149,10 @@
 
   \bg{cvgreen}{white}{Diplomas}\\[0.5em]
 
-  BNSSA, French lifeguard diploma
-  PSE1, French first aid diploma
-  French `B' driver's license
-  Scientific Baccalauréat, OIB
+  \textbf{BNSSA}, French lifeguard diploma
+  \textbf{PSE1}, French first aid diploma
+  French `B' \textbf{driver's license}
+  \textbf{Scientific Baccalauréat}, OIB
 
   \bigskip
 
@@ -201,14 +201,21 @@
   \end{cvtimeline}
 
   \section*{Projects}
-  \subsubsection*{Sensitive Document Classification}
-  My final year project is a ReactJS + Flask Web Application for redacting sensitive documents with SkLearn Machine Learning classification of MongoDB documents by sensitivity.
-
-  \subsubsection*{Personal docker-compose stack}
-  Minimal configuration automatic SSL Traefik reverse proxy serving various applications protected by an OAuth2 proxy.
-
-  \subsubsection*{Web crawler}
-  Broad web crawler built with Scrapy as multiple Python microservices backed by MongoDB for extracting website metadata.
+  \begin{minipage}[t]{0.45\rightcolwidth}
+    \subsubsection*{Sensitive Document Classification}
+    My final year project is a ReactJS + Flask Web Application for redacting sensitive documents with SkLearn Machine Learning classification of MongoDB documents by sensitivity.
+  \end{minipage}
+  \hspace{0.5em}
+  \begin{minipage}[t]{0.45\rightcolwidth}
+    \subsubsection*{Personal docker compose stack}
+    Minimal configuration automatic SSL Traefik reverse proxy serving various applications protected by an OAuth2 proxy.
+  \end{minipage}
+  
+  \begin{minipage}[t]{0.45\rightcolwidth}
+    \vspace{1em}
+    \subsubsection*{Web crawler}
+    Broad web crawler built with Scrapy as multiple Python microservices backed by MongoDB for extracting website metadata.
+  \end{minipage}
 
 
   \vfill{} % Whitespace before final footer
