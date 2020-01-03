@@ -2,7 +2,13 @@
 
 This repository contains the LaTeX code for my personal CV.
 
+## PDF
+
+A PDF compiled from the LaTeX Source is [available here](https://guillaumedsde.gitlab.io/curriculum-vitae/main.pdf)
+
 ## Preview
+
+![Rendered CV](https://guillaumedsde.gitlab.io/curriculum-vitae/main.png)
 
 ## Acknowledgements
 
