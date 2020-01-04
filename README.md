@@ -1,14 +1,8 @@
 # [WIP] Curriculum vitae
 
-This repository contains the LaTeX code for my personal CV.
+This repository contains the LaTeX code for my personal CV. (click image for PDF)
 
-## PDF
-
-A PDF compiled from the LaTeX Source is [available here](https://guillaumedsde.gitlab.io/curriculum-vitae/main.pdf)
-
-## Preview
-
-![Rendered CV](https://guillaumedsde.gitlab.io/curriculum-vitae/main.png)
+[![Rendered CV](https://guillaumedsde.gitlab.io/curriculum-vitae/main.png)](https://guillaumedsde.gitlab.io/curriculum-vitae/main.pdf)
 
 ## Acknowledgements
 
