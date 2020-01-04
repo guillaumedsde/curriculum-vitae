@@ -21,7 +21,7 @@ build-image:
     - apt update
     - apt install -y imagemagick
   script:
-    - convert main.pdf main.png
+    - convert -density 1200 main.pdf main.png
   artifacts:
     paths:
       - "*.png"
