@@ -20,6 +20,20 @@
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
+
+%----------------------------------------------------------------------------------------
+% STRUTS AND RULES
+%----------------------------------------- -----------------------------------------------
+
+% custom strut
+\newcommand{\mystrut}{\rule[-.3\baselineskip]{0pt}{\baselineskip}}
+
+% colored rule and text for chart legends, wrapped in parbox
+% param 1: text
+% param 2: width in cm or pt, em ...
+% param 3: color
+\newcommand{\legend}[3]{\parbox[t]{#2}{\textcolor{#3}{\rule{#2}{4pt}}\\#1}}
+
 % define global counters
 \newcounter{yearcount}
 
