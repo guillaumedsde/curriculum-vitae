@@ -19,9 +19,9 @@ build-image:
   stage: image
   before_script:
     - apt update
-    - apt install -y imagemagick
+    - apt install -y --no-install-recommends imagemagick ghostscript
   script:
-    - convert -density 1200 main.pdf main.png
+    - convert -density 600 -depth 8 -quality 100 main.pdf main.png
   artifacts:
     paths:
       - "*.png"
