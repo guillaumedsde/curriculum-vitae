@@ -1,6 +1,6 @@
 % !TeX root = ./main.tex
 
-\documentclass[withoutsidebar]{simplehipstercv}
+\documentclass[withoutsidebar, hidelinks]{simplehipstercv}
 % available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
 % withoutsidebar
 
@@ -9,7 +9,9 @@
 \usepackage[margin=1cm, top=1.5cm, bottom=1.5cm, a4paper]{geometry}
 
 \usepackage{hyperref}
+
 \usepackage{tabularx}
+\usepackage{xcolor}
 
 %------------------------------------------------------------------ Variables
 
@@ -30,7 +32,6 @@
 % 	TIMELINE CHART
 %----------------------------------------------------------------------------------------
 
-\usepackage{xcolor}
 
 %defineColors
 \definecolor{orange}{RGB}{255,150,0}
@@ -164,16 +165,19 @@
 
     \bg{cvgreen}{white}{Diplomas}\\[0.5em]
 
-    \textbf{BNSSA}, French lifeguard diploma
-    \textbf{PSE1}, French first aid diploma
+    \href{http://cloud.desusanne.com/s/KPk932aDszTDbf7}{\textbf{BNSSA}, French lifeguard diploma}
+
+    \href{http://cloud.desusanne.com/s/3YnCAdcy8Em7Mt4}{\textbf{PSE1}, French first aid diploma}
+
     French \textbf{driver's license}
-    \textbf{Scientific Baccalauréat}, OIB
+
+    \href{http://cloud.desusanne.com/s/iEsrP67iGY9YrbP}{\textbf{Scientific Baccalauréat}, OIB}
 
     \bigskip
 
     \bg{cvgreen}{white}{Sports}\\[0.5em]
     \begin{tabularx}{\leftcolwidth}{l | X}
-      \textbf{Swimming} & 10 Years \\
+      \href{https://abcnatation.fr/club_manager/clubs/nageur_perfs/030632450/1488466}{\textbf{Swimming}} & 10 Years \\
 
       \textbf{Biking}   & 6 Years  \\
 
@@ -207,9 +211,9 @@
 
   % TIMELINE
   \begin{cvtimeline}{2013}{2021}{11}
-    \linevent{6/2019}{8/2019}{Intern}{Misakey, Lyon}{Python Website metada crawler as Docker microservices backed by MongoDB}{cvgreen}{June to August 2019}
+    \linevent{6/2019}{8/2019}{Intern}{\href{https://www.misakey.com/}{Misakey, Lyon}}{Python Website metada crawler as Docker microservices backed by MongoDB}{cvgreen}{June to August 2019}
 
-    \linevent{6/2018}{7/2018}{Summer job}{CGI, Clermont-Ferrand}{Python program to formulate Gitlab access levels in Terraform Azure IAM policies}{cvgreen}{June and July 2018}
+    \linevent{6/2018}{7/2018}{Summer job}{\href{https://www.cgi.fr/fr-fr/recrute/clermont-ferrand}{CGI, Clermont-Ferrand}}{Python program to formulate Gitlab access levels in Terraform Azure IAM policies}{cvgreen}{June and July 2018}
 
     \linevent{6/2017}{8/2017}{Lifeguard}{Cournon d'Auvergne, France}{Team supervision of the safety and rescue of swimmers in lake of Cournon d'Auvergne}{cvgreen}{August 2017}
 
@@ -217,7 +221,7 @@
 
     \linevent{8/2016}{10/2016}{Lifeguard}{Aydat, France}{}{cvgreen}{August 2016}
 
-    \linevent{9/2013}{2/2016}{Scientific Baccalauréat, British OIB}{Lycée Jeanne d'Arc, Clermont-Ferrand}{First class honours French scientific high school diploma with international english}{cvpurple}{July 2016}
+    \linevent{9/2013}{2/2016}{\href{http://cloud.desusanne.com/s/iEsrP67iGY9YrbP}{Scientific Baccalauréat, British OIB}}{Lycée Jeanne d'Arc, Clermont-Ferrand}{First class honours French scientific high school diploma with international english}{cvpurple}{July 2016}
 
     \linevent{9/2010}{7/2014}{Agricultural summer jobs}{Auvergne, France}{Worked for a couple weeks during multiple summers harvesting cherries}{cvgreen}{summers of 2012-2015}
 
@@ -226,16 +230,18 @@
   \end{cvtimeline}
 
   \section*{Projects}
+  \href{https://harpocrates-app.gitlab.io/harpocrates/}{
   \begin{minipage}[t]{0.45\rightcolwidth}
     \subsubsection*{Sensitive Document Classification}
     My final year project is a \textbf{ReactJS} + \textbf{Flask} Web Application for redacting sensitive government documents with \textbf{SkLearn} Machine Learning (ML) classification of \textbf{MongoDB} documents by sensitivity along with feature explanations for the ML classification.
-  \end{minipage}
+  \end{minipage}}
   \hspace{0.5em}
+  \href{https://gitlab.com/guillaumedsde/docker-media-stack}{
   \begin{minipage}[t]{0.45\rightcolwidth}
     \subsubsection*{Personal server}
     Home racked \textbf{ZFS} media storage and application server built with docker requiring minimal configuration and automatic SSL \textbf{Traefik} reverse proxy serving various applications authenticated using \textbf{OAuth2}.
   \end{minipage}
-
+  }
   \begin{minipage}[t]{0.45\rightcolwidth}
     \vspace{1em}
     \subsubsection*{Web crawler}
