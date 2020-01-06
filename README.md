@@ -1,4 +1,4 @@
-# [WIP] Curriculum vitae
+# Curriculum vitae
 
 This repository contains the LaTeX code for my personal CV. (click image for PDF)
 
