@@ -13,6 +13,9 @@
 \usepackage{tabularx}
 \usepackage{xcolor}
 
+% For justification
+\usepackage{ragged2e}
+
 %------------------------------------------------------------------ Variables
 
 \newlength{\rightcolwidth}
@@ -105,8 +108,11 @@
 
     \bg{cvgreen}{white}{About me}\\[0.5em]
 
-    Hello, I am a Politics and Computing Science student in Glasgow, particularly interested in the intersection and interactions between Technology and Politics.
 
+    \justifying
+    Hello, I am a Politics and Computing Science student in Glasgow, particularly interested in the intersection and interactions between Technology and Politics. I will graduate in Summer of 2020 and will be \textbf{available in September 2020}.
+    
+    \flushright
 
     \bigskip
 
@@ -179,11 +185,11 @@
     \begin{tabularx}{\leftcolwidth}{l | X}
       \href{https://abcnatation.fr/club_manager/clubs/nageur_perfs/030632450/1488466}{\textbf{Swimming}} & 10 Years \\
 
-      \textbf{Biking}   & 6 Years  \\
+      \textbf{Biking}                                                                                    & 6 Years  \\
 
-      \textbf{Running}  & 4 Years  \\
+      \textbf{Running}                                                                                   & 4 Years  \\
     \end{tabularx}
-    \vspace{4em}
+    \vspace{3em}
 
 
     \href{https://guillaume.desusanne.com}{\infobubble{\faUser}{cvgreen}{white}{guillaume.desusanne.com}}
@@ -231,16 +237,16 @@
 
   \section*{Projects}
   \href{https://harpocrates-app.gitlab.io/harpocrates/}{
-  \begin{minipage}[t]{0.45\rightcolwidth}
-    \subsubsection*{Sensitive Document Classification}
-    My final year project is a \textbf{ReactJS} + \textbf{Flask} Web Application for redacting sensitive government documents with \textbf{SkLearn} Machine Learning (ML) classification of \textbf{MongoDB} documents by sensitivity along with feature explanations for the ML classification.
-  \end{minipage}}
+    \begin{minipage}[t]{0.45\rightcolwidth}
+      \subsubsection*{Sensitive Document Classification}
+      My final year project is a \textbf{ReactJS} + \textbf{Flask} Web Application for redacting sensitive government documents with \textbf{SkLearn} Machine Learning (ML) classification of \textbf{MongoDB} documents by sensitivity along with feature explanations for the ML classification.
+    \end{minipage}}
   \hspace{0.5em}
   \href{https://gitlab.com/guillaumedsde/docker-media-stack}{
-  \begin{minipage}[t]{0.45\rightcolwidth}
-    \subsubsection*{Personal server}
-    Home racked \textbf{ZFS} media storage and application server built with docker requiring minimal configuration and automatic SSL \textbf{Traefik} reverse proxy serving various applications authenticated using \textbf{OAuth2}.
-  \end{minipage}
+    \begin{minipage}[t]{0.45\rightcolwidth}
+      \subsubsection*{Personal server}
+      Home racked \textbf{ZFS} media storage and application server built with docker requiring minimal configuration and automatic SSL \textbf{Traefik} reverse proxy serving various applications authenticated using \textbf{OAuth2}.
+    \end{minipage}
   }
   \begin{minipage}[t]{0.45\rightcolwidth}
     \vspace{1em}
