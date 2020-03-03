@@ -1,8 +1,10 @@
-# Curriculum vitae
-
-This repository contains the LaTeX code for my personal CV. (click image for PDF)
+<div align="center">
+    <h1>📝 Curriculum Vitae</h1>
+</div>
 
 [![Rendered CV](https://guillaumedsde.gitlab.io/curriculum-vitae/main.png)](https://guillaumedsde.gitlab.io/curriculum-vitae/main.pdf)
+
+This repository contains the LaTeX code for my personal CV. (click image for PDF)
 
 ## Acknowledgements
 
