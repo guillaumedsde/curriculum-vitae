@@ -21,7 +21,7 @@ build-image:
     - apt update
     - apt install -y --no-install-recommends imagemagick ghostscript
   script:
-    - convert -density 300 -depth 8 -quality 100 -format png *.pdf
+    - mogrify -density 300 -depth 8 -quality 100 -format png *.pdf
   artifacts:
     paths:
       - "*.png"
