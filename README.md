@@ -2,7 +2,9 @@
     <h1>üìù Curriculum Vitae</h1>
 </div>
 
-[![Rendered CV](https://guillaumedsde.gitlab.io/curriculum-vitae/main.png)](https://guillaumedsde.gitlab.io/curriculum-vitae/main.pdf)
+|                                                                     English                                                                     |                                                                 FranÁais                                                                 |
+| :---------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------: |
+| ![![Rendered english CV](https://guillaumedsde.gitlab.io/curriculum-vitae/main.png)](https://guillaumedsde.gitlab.io/curriculum-vitae/main.pdf) | [![Rendered CV](https://guillaumedsde.gitlab.io/curriculum-vitae/cv.fr.png)](https://guillaumedsde.gitlab.io/curriculum-vitae/cv.fr.pdf) |
 
 This repository contains the LaTeX code for my personal CV. (click image for PDF)
 
