@@ -6,9 +6,9 @@
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-|                                                                     English                                                                     |                                                                    Français                                                                     |
-| :---------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------: |
-| ![![Rendered english CV](https://guillaumedsde.gitlab.io/curriculum-vitae/main.png)](https://guillaumedsde.gitlab.io/curriculum-vitae/main.pdf) | [![Rendered french CV](https://guillaumedsde.gitlab.io/curriculum-vitae/cv.fr.png)](https://guillaumedsde.gitlab.io/curriculum-vitae/cv.fr.pdf) |
+|                                                                     English                                                                      |                                                                    Français                                                                     |
+| :----------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------: |
+| [![Rendered english CV](https://guillaumedsde.gitlab.io/curriculum-vitae/cv.en.png)](https://guillaumedsde.gitlab.io/curriculum-vitae/cv.en.pdf) | [![Rendered french CV](https://guillaumedsde.gitlab.io/curriculum-vitae/cv.fr.png)](https://guillaumedsde.gitlab.io/curriculum-vitae/cv.fr.pdf) |
 
 This repository contains the LaTeX code for my personal CV. (click image for PDF)
 
