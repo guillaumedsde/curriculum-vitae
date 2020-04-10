@@ -7,7 +7,7 @@ build-latex:
   image: aergus/latex:latest
   stage: pdf
   script:
-    - latexmk -pdf -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape ./main.tex
+    - latexmk -pdf -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape ./*.tex
   artifacts:
     paths:
       - "*.pdf"
