@@ -7,7 +7,7 @@ build-latex:
   image: aergus/latex:latest
   stage: pdf
   script:
-    - latexmk -pdf -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape ./main.tex
+    - latexmk -pdf -synctex=1 -interaction=nonstopmode -file-line-error --shell-escape ./cv.*.tex
   artifacts:
     paths:
       - "*.pdf"
@@ -21,7 +21,7 @@ build-image:
     - apt update
     - apt install -y --no-install-recommends imagemagick ghostscript
   script:
-    - convert -density 600 -depth 8 -quality 100 main.pdf main.png
+    - mogrify -density 300 -depth 8 -quality 100 -format png *.pdf
   artifacts:
     paths:
       - "*.png"
