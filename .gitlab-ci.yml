@@ -30,6 +30,7 @@ pages:
   script:
     - mkdir public
     - cp *.pdf public
+    - cp cv.en.pdf public/main.pdf
     - cp *.png public
   artifacts:
     paths:
