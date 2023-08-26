@@ -4,9 +4,10 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; style-src 'unsafe-inline'; font-src 'self'"
+      content="default-src 'none'; style-src 'unsafe-inline'; font-src 'self'; img-src 'self' data:;"
     />
     <meta charset="utf-8" />
+    <link rel="icon" href="data:," />
     <meta
       name="description"
       content="Curriculum Vitae de Guillaume de Susanne d'Epinay"
@@ -120,7 +121,7 @@
           background-color: transparent;
           color: black;
           max-width: none;
-          min-width: 55em;
+          min-width: 56em;
         }
 
         p,
@@ -171,23 +172,24 @@
 
     <h2>⌨️ Expérience</h2>
     <h3>Développeur backend - Preligens</h3>
-    <p class="heading-subtitle"><em>09/2022 - Aujourd'hui</em></p>
+    <p class="heading-subtitle"><em>10/2022 - Aujourd'hui</em></p>
     <p>
       Conception et développement de chaînes de traitement et d'analyse d'images
       satellite SAR en python avec une base PostGIS, un stockage S3 ainsi que
       les orchestrateurs de tâches Prefect et Airflow.
     </p>
+    <p>
+      Ecriture d'une chaîne d'intégration continue avec Github Actions et d'un
+      outillage de déploiement sur un cluster Nomad AWS.
+    </p>
     <h3>Développeur fullstack - ANSSI</h3>
     <p class="heading-subtitle"><em>09/2020 - 09/2022</em></p>
     <p>
       Développement en Scrum de plusieurs applications à base d'API
-      django-rest-framework écrite en Python, d'interfaces Web VueJS et de
-      PostgreSQL comme base de donnée.
-    </p>
-    <p>
-      Mise en place de chaînes d'intégration continue Gitlab pour assurer la
-      qualité, le packaging ainsi que le déploiement du code sur un cluster
-      Nomad ou des machines virtuelles avec Ansible.
+      django-rest-framework en Python, d'interfaces Web VueJS et de PostgreSQL
+      comme base de donnée. Mise en place de chaînes d'intégration continue
+      Gitlab pour assurer la qualité, le packaging ainsi que le déploiement du
+      code sur un cluster Nomad ou des machines virtuelles avec Ansible.
     </p>
     <div class="column-container">
       <div class="column-item">
@@ -227,8 +229,8 @@
     <p>
       Application web pour aider à l'identification d'informations sensibles de
       documents texte stockés sur MongoDB avec Flask, ReactJS et un modèle
-      scikit-learn de classification de texte accompagné d'explications des
-      choix du modèle.
+      scikit-learn de classification accompagné d'explications des choix du
+      modèle.
     </p>
     <h3>Lycée Jeanne d'Arc - Clermont-Ferrand</h3>
     <p class="heading-subtitle">
