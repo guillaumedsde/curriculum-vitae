@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'unsafe-inline'; font-src 'self'"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Curriculum Vitae de Guillaume de Susanne d'Epinay"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>👨‍💻 Guillaume de Susanne d'Epinay</title>
+    <style type="text/css">
+      html {
+        line-height: 1.5;
+        font-family: "Nunito Sans";
+        font-size: 12pt;
+        color: #1a1a1a;
+        background-color: #fdfdfd;
+      }
+
+      body {
+        margin: 0 auto;
+        max-width: 45em;
+        padding: 50px;
+        hyphens: auto;
+        overflow-wrap: break-word;
+        text-rendering: optimizeLegibility;
+        font-kerning: normal;
+      }
+
+      p {
+        margin: 0.5em 0;
+      }
+
+      ul {
+        margin: 0;
+      }
+
+      a {
+        color: #1a1a1a;
+      }
+
+      a:visited {
+        color: #1a1a1a;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin-top: 0.5em;
+        margin-bottom: 0;
+      }
+
+      .contact-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5em 0;
+      }
+
+      .column-container {
+        display: flex;
+        grid-gap: 25px;
+        justify-content: space-between;
+      }
+
+      .column-item {
+        width: 100%;
+      }
+
+      .heading-subtitle {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+      }
+
+      @media not print {
+        @media (max-width: 750px) {
+          body {
+            padding: 1em;
+          }
+
+          h1,
+          h2,
+          h3,
+          h4 {
+            margin-top: 0.25em;
+          }
+
+          h1 {
+            font-size: 1.35em;
+          }
+
+          h2 {
+            font-size: 1.25em;
+          }
+
+          h3 {
+            font-size: 1em;
+          }
+
+          .contact-container {
+            flex-direction: column;
+          }
+
+          .column-container {
+            flex-direction: column;
+          }
+        }
+      }
+
+      @media print {
+        body {
+          background-color: transparent;
+          color: black;
+          max-width: none;
+          min-width: 53em;
+          text-align: justify;
+        }
+
+        p,
+        h2,
+        h3 {
+          orphans: 3;
+          widows: 3;
+        }
+
+        h2,
+        h3,
+        h4 {
+          page-break-after: avoid;
+        }
+      }
+      /* nunito-sans-regular - latin */
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        src: local(""),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/nunito-sans-v12-latin-regular.woff2") format("woff2"),
+          /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            url("./fonts/nunito-sans-v12-latin-regular.woff") format("woff");
+        font-display: swap;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>👨‍💻 Guillaume de Susanne d'Epinay</h1>
+    <div class="contact-container">
+      <div>
+        📧 <a href="mailto:guillaume@desusanne.com">guillaume@desusanne.com</a>
+      </div>
+      <div>📱 <a href="tel:+33-6-41-80-00-60">+33 6 41 80 00 60</a></div>
+      <div>
+        📄
+        <a href="https://guillaume.desusanne.com/cv.pdf"
+          >guillaume.desusanne.com/cv.pdf</a
+        >
+      </div>
+    </div>
+    <p>
+      👋 Bonjour, je suis développeur fullstack principalement en Python et
+      Javascript avec une appétence pour le DevOps et je cherche actuellement un
+      emploi en région Parisienne.
+    </p>
+
+    <h2>⌨️ Expérience</h2>
+    <h3>Développeur backend - Preligens</h3>
+    <p class="heading-subtitle"><em>09/2022 - Aujourd'hui</em></p>
+    <p>
+      Conception et développement de chaînes de traitement et d'analyse d'images
+      satellite SAR en python avec les orchestrateurs de tâches Prefect ainsi
+      que Airflow.
+    </p>
+    <h3>Développeur fullstack - ANSSI</h3>
+    <p class="heading-subtitle"><em>09/2020 - 09/2022</em></p>
+    <p>
+      Développement en Scrum de plusieurs applications à base d'API
+      django-rest-framework écrite en Python, d'interfaces Web VueJS et de
+      PostgreSQL comme base de donnée.
+    </p>
+    <p>
+      Mise en place de chaînes d'intégration continue Gitlab pour assurer la
+      qualité, le packaging ainsi que le déploiement du code sur un cluster
+      Nomad ou des machines virtuelles avec Ansible.
+    </p>
+    <div class="column-container">
+      <div class="column-item">
+    <h3>Stage développeur backend - Misakey</h3>
+    <p class="heading-subtitle"><em>06/2019 - 08/2019</em></p>
+    <p>
+      Développement et déploiement d'un crawler web Python avec le framework
+      Scrapy avec MongoDB.
+    </p>
+  </div>
+  <div class="column-item">
+    <h3>Stage développeur backend - CGI</h3>
+    <p class="heading-subtitle"><em>06/2018 - 08/2018</em></p>
+    <p>
+      Développement d'un système de génération de code Terraform en Python pour
+      appliquer des droits d'accès gitlab sur de l'infrastructure Azure.
+    </p>
+  </div>
+  </div>
+    <h2>🎓 Éducation</h2>
+    <h3>University of Glasgow</h3>
+    <p class="heading-subtitle">
+      <em>Master of Arts in Computing Science and Politics</em>
+    </p>
+    <p>
+      Cursus bidisciplinaire pendant lequel je me suis intéressé à la
+      géopolitique de l'énergie, les politiques intérieures et internationales
+      Chinoises et Européennes mais aussi les fondamentaux des réseaux et
+      systèmes, le développement web ainsi que la data science.
+    </p>
+    <h4>
+      <a href="https://github.com/guillaumedsde/Harpocrates"
+        >github.com/guillaumedsde/Harpocrates</a
+      >
+    </h4>
+    <p>
+      Application web pour aider à l'identification d'informations sensibles de
+      documents texte stockés sur MongoDB avec Flask, ReactJS et un modèle
+      scikit-learn de classification de texte accompagné d'explications des
+      choix du modèle.
+    </p>
+    <h3>Lycée Jeanne d'Arc - Clermont-Ferrand</h3>
+    <p class="heading-subtitle">
+      <em
+        >Baccalauréat Scientifique Option Internationale Britannique (OIB)
+        Mention Très Bien</em
+      >
+    </p>
+
+    <h2>💽 Projets personnels</h2>
+    <h3>
+      <a href="https://github.com/guillaumedsde/docker-media-stack"
+        >github.com/guillaumedsde/docker-media-stack</a
+      >
+    </h3>
+    <p>
+      Infrastructure personnelle faisant tourner de nombreux services sous
+      docker derrière un reverse proxy avec authentification unique.
+    </p>
+    <h3>
+      <a href="https://gitlab.com/guillaumedsde/dht-torznab"
+        >gitlab.com/guillaumedsde/dht-torznab</a
+      >
+    </h3>
+    <p>
+      API Python pour chercher des torrent indexés dans PostgreSQL à l'aide d'un
+      crawler de torrent pré-existant.
+    </p>
+    <div class="column-container">
+      <div>
+        <h2>🌍 Langues</h2>
+        <ul>
+          <li>Français - Langue Natale</li>
+          <li>Anglais - Bilingue</li>
+          <li>Espagnol - Niveau B2</li>
+        </ul>
+      </div>
+      <div>
+        <h2>🔗 Liens</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/guillaumedsde/"
+              >github.com/guillaumedsde</a
+            >
+          </li>
+          <li>
+            <a href="https://gitlab.com/guillaumedsde/"
+              >gitlab.com/guillaumedsde</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
