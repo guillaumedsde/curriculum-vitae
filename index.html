@@ -56,14 +56,14 @@
       h2,
       h3,
       h4 {
-        margin-top: 0.4em;
+        margin-top: 0.3em;
         margin-bottom: 0;
       }
 
       .contact-container {
         display: flex;
         justify-content: space-between;
-        margin: 0.75em 0;
+        margin: 0.5em 0;
       }
 
       .column-container {
@@ -78,7 +78,7 @@
 
       .heading-subtitle {
         margin-top: 0;
-        margin-bottom: 0.3em;
+        margin-bottom: 0.2em;
       }
 
       @media not print {
@@ -117,11 +117,18 @@
       }
 
       @media print {
+        @page {
+          margin: 0;
+          padding: 0;
+          /* NOTE: A4 page */
+          size: 21cm 29.7cm;
+        }
+
         body {
           background-color: transparent;
           color: black;
           max-width: none;
-          min-width: 54em;
+          min-width: 56em;
         }
 
         p,
@@ -174,9 +181,10 @@
     <h3>Développeur backend - Preligens</h3>
     <p class="heading-subtitle"><em>09/2022 - Aujourd'hui</em></p>
     <p>
-      Conception et développement de chaînes de traitement et d'analyse d'images
-      satellite SAR en python avec une base PostGIS, un stockage S3 ainsi que
-      les orchestrateurs de tâches Prefect et Airflow.
+      Conception et développement d'une chaîne de traitement et d'analyse
+      d'images satellite SAR croisées avec d'autres données géoréférencées en
+      python avec une base PostGIS, un stockage S3 ainsi que les orchestrateurs
+      de tâches Prefect et Airflow.
     </p>
     <p>
       Implémentation d'une chaîne d'intégration continue avec Github Actions et
@@ -208,9 +216,8 @@
         <h3>Stage développeur backend - CGI</h3>
         <p class="heading-subtitle"><em>06/2018 - 08/2018</em></p>
         <p>
-          Développement d'un système de génération de code Terraform en Python
-          pour appliquer des droits d'accès gitlab sur de l'infrastructure
-          Azure.
+          Développement d'un système de génération en Python de droits d'accès
+          sur de l'infrastructure Azure à base de Terraform.
         </p>
       </div>
     </div>
